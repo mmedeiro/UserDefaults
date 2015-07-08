@@ -10,6 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var nomeTextField: UITextField!
+    @IBOutlet weak var sobrenomeTextField: UITextField!
+    @IBOutlet weak var idadeTextField: UITextField!
+    @IBOutlet weak var imageView: UIImageView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +26,10 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func botaoAlterarImagem(sender: AnyObject) {
+    }
 
+    @IBAction func botaoSalvar(sender: AnyObject) {
+    }
 }
 

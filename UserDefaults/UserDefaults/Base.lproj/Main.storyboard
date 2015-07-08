@@ -46,6 +46,9 @@
                                 <state key="normal" title="Salvar">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="botaoSalvar:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="gdj-B0-PPl"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EHy-tq-lNG">
                                 <rect key="frame" x="180" y="70" width="240" height="128"/>
@@ -61,6 +64,9 @@
                                 <state key="normal" title="Alterar Imagem">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="botaoAlterarImagem:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="YTl-zz-BbV"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -82,6 +88,12 @@
                             <constraint firstItem="goV-lr-ld7" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" constant="5" id="wyk-LZ-5lt"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="idadeTextField" destination="O3f-al-jnL" id="ig6-gd-8tt"/>
+                        <outlet property="imageView" destination="EHy-tq-lNG" id="zzd-Tj-cIf"/>
+                        <outlet property="nomeTextField" destination="goV-lr-ld7" id="bnK-z2-3QE"/>
+                        <outlet property="sobrenomeTextField" destination="YpL-bS-nYJ" id="nah-5B-Myx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
