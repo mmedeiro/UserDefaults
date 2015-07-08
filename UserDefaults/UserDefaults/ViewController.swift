@@ -49,6 +49,38 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     
     @IBAction func botaoSalvar(sender: AnyObject) {
+        
+        nomeTextField.resignFirstResponder()
+        sobrenomeTextField.resignFirstResponder()
+        idadeTextField.resignFirstResponder()
+        
+        var nome = String()
+        var sobrenome = String()
+        var idade = String()
+        
+        nome = nomeTextField.text
+        sobrenome = sobrenomeTextField.text
+        idade = idadeTextField.text
+        
+        var contactImage = UIImage()
+        var imageData = NSData()
+        
+        contactImage = imageView.image!
+        UIImageJPEGRepresentation(contactImage, 100)
+        
+        var defaults = NSUserDefaults()
+        
+        defaults = NSUserDefaults.standardUserDefaults()
+        
+        defaults.setObject(nome, forKey: "nome")
+        defaults.setObject(sobrenome, forKey: "sobrenome")
+        defaults.setObject(idade, forKey: "idade")
+        defaults.setObject(imageData, forKey: "image")
+        
+        defaults.synchronize()
+        
+        println("Salvooooooou, uhuuuul")
+
     }
 }
 
